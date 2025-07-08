@@ -1,4 +1,98 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #6b708d;
+    transition: color 0.3s
+}
+
+.menu li a:hover{
+    color: #072ac8;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #072ac8;
+    padding: 0.5rem 1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    white-space: pre-line;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #6b708d;
+    margin-bottom: 1.5rem;
+    white-space: pre-line;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #072ac8;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+}
+
+.button-right{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #6b708d;
+}
+
+.hero-images {
+    position: relative;
+}
+
+.team-member {
+    width: 400px;
+}
+
+.left {
+    position: absolute;
+    top: -20px;
+    left: -90px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgb( #1a1b20);
+}
+
+.right {
+    position: absolute;
+    top: 300px;
+    right: -100px;
+    width: 300px;
 }
