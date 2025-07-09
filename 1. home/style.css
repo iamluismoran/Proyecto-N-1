@@ -105,11 +105,11 @@ body{
     right: -80px;
     width: 270px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 .right:hover{
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 .logos {
@@ -137,7 +137,7 @@ body{
     cursor: pointer;
 }
 
-.projects-grid {
+.projects-grid { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
@@ -192,4 +192,97 @@ body{
     width: 100%;
     height: 250px;
     display: block;
+}
+
+.clients{
+    align-items: center;
+    text-align: center;
+    background-color: #292e47;
+    padding: 10rem 2rem;
+}
+
+.clients h2{
+    font-size: 1.5rem;
+    color: #f2f4fc;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.clients h3{
+    font-size: 1rem;
+    color: #ffc600;
+    margin-bottom: 1.5rem;
+    white-space: pre-line;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1000px; 
+}
+
+.services-grid h2 {
+    font-size: 2rem;
+    grid-column: 1 / -1; 
+    margin-bottom: 1.5rem;
+    color: #292e47;
+}
+
+.service-cards {
+    background-color: #fff;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    text-align: left;         
+    transition: 1s ease;
+}
+
+.service-cards:hover {
+    transform: translateY(-5px);
+}
+
+.service-cards img {
+    width: 50%;
+    height: auto;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #ECF7FF;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.service-cards h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+    color: #292e47;
+}
+
+.service-cards p {
+    font-size: 1rem;
+    color: #6b708d;
+    margin-bottom: 1.2rem;
+    white-space: pre-line;
+    
+}
+
+.learn-more {
+    text-decoration: none;
+    color: #072ac8;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 10px;
 }
