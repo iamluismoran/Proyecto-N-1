@@ -42,11 +42,21 @@
 
         <section class="logos">
             <div>
-                <img src="../Assets/logos/airbnb-logo.svg" />
-                <img src="../Assets/logos/google-logo.svg" />
-                <img src="../Assets/logos/microsoft-logo.svg" />
-                <img src="../Assets/logos/fedex-logo.svg" />
-                <img src="../Assets/logos/amazon-logo.svg" />
+                <a href="https://www.airbnb.es/" target="_blank">
+                    <img src="../Assets/logos/airbnb-logo.svg" />
+                </a>
+                <a href="https://www.google.com/?hl=es" target="_blank" >
+                    <img src="../Assets/logos/google-logo.svg" />
+                </a>
+                <a href="https://www.microsoft.com/es-es" target="_blank">
+                    <img src="../Assets/logos/microsoft-logo.svg" />
+                </a>
+                <a href="https://www.fedex.com/es-es/home.html" target="_blank">
+                    <img src="../Assets/logos/fedex-logo.svg" />
+                </a>
+                <a href="https://www.amazon.es/ref=nav_logo" target="_blank">
+                    <img src="../Assets/logos/amazon-logo.svg" />
+                </a>     
             </div>
         </section>
 
@@ -124,9 +134,11 @@
             <h2>Do you have any questions?</h2>
             <p>Let us help you!</p>
             <form>
-                <img src="../Assets/newsletter/icon/mail.svg" alt="icon" />
-                <input type="email" placeholder="Your Email" required>
-                <button type="submit">Subscribe</button>
+                <div class="input-group">
+                    <img src="../Assets/newsletter/icon/mail.svg" alt="icon" class="email-icon"/>
+                    <input type="email" class="email" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="submit-button">Subscribe</button>
             </form>
         </section>
     </main>

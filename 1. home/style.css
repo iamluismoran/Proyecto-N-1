@@ -6,6 +6,7 @@
 
 body{
     background-color: #f2f4fc;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .navbar {
@@ -40,6 +41,12 @@ body{
     color: #ffffff;
     background-color: #072ac8;
     padding: 0.5rem 1rem;
+    transition: 1s ease;
+}
+
+.nav-button:hover {
+    color: #43d2ff;
+    background-color: #0623a1;
 }
 
 .hero {
@@ -51,6 +58,7 @@ body{
 }
 
 .hero h1 {
+    color: #292e47;
     font-size: 3rem;
     margin-bottom: 1.5rem;
     white-space: pre-line;
@@ -69,13 +77,25 @@ body{
     background-color: #072ac8;
     padding: 0.5rem 1rem;
     color: #ffffff;
+    transition: 1s ease;
 }
+
+.button:hover {
+    color: #43d2ff;
+    background-color: #0623a1;
+}
+
 
 .button-right{
     display: inline-block;
     text-decoration: none;
     padding: 0.5rem 1rem;
     color: #6b708d;
+    transition: 0.5s ease;
+}
+
+.button-right:hover{
+    color: #072ac8;
 }
 
 .hero-images {
@@ -147,6 +167,7 @@ body{
 }
 
 .projects-grid h2{
+    color: #292e47;
     font-size: 2rem;
     grid-column: 1 / -1;
     white-space: pre-line;
@@ -169,6 +190,7 @@ body{
 }
 
 .projects-card h3{
+    color: #292e47;
     font-size: 1.5rem;
     margin: 2rem 2rem 0 ;
 }
@@ -198,7 +220,8 @@ body{
     align-items: center;
     text-align: center;
     background-color: #292e47;
-    padding: 10rem 2rem;
+    padding: 8rem 2rem;
+    margin: 0.5rem 8rem 4rem;
 }
 
 .clients h2{
@@ -219,10 +242,12 @@ body{
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    padding: 2rem;
+    gap: 3rem;
+    padding: 5rem 1.5rem;
     margin: 0 auto;
-    max-width: 1000px; 
+    max-width: 1000px;
+    margin-bottom: 4rem;
+    
 }
 
 .services-grid h2 {
@@ -285,4 +310,61 @@ body{
     font-weight: 500;
     font-size: 1rem;
     margin-top: 10px;
+    transition: 1s ease;
+}
+
+
+.learn-more:hover {
+    text-decoration: underline;
+    color: #072ac8;
+}
+.cta{
+    background-color: #ffc600;
+    align-items: center;
+    text-align: center;
+    color: #292e47;
+    padding: 8rem 2rem;
+    margin: 1rem 8rem 5rem;
+}
+
+.cta h2{
+    margin-bottom: 1rem;
+}
+
+.cta p{
+    margin-bottom: 3rem;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.input-group{
+    position: relative;
+}
+
+.submit-button{
+    color: #ECF7FF;
+    font-size: 0.7rem;
+    background-color: #072ac8;
+    padding: 1.02rem 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.email{
+    text-align: left;
+    padding: 1rem 3rem;
+    border: none;
+}
+
+.email-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 25px;
 }
