@@ -337,8 +337,9 @@ body{
     transition: 1s ease;
 }
 
-.service-cards:hover {
+.service-cards:hover{
     transform: translateY(-5px);
+    background-color: #ECF7FF;
 }
 
 .service-cards img {
@@ -356,6 +357,11 @@ body{
     align-items: center;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
+    transition: 1s;
+}
+
+.service-icon:hover {
+    background-color: white;
 }
 
 
@@ -423,6 +429,11 @@ form{
     padding: 1.02rem 1.5rem;
     border: none;
     cursor: pointer;
+    transition: 1s ease;
+}
+
+.submit-button:hover{
+    color: #ffc600;
 }
 
 .email{
@@ -452,8 +463,9 @@ form{
     margin-bottom: 1rem;
 }
 
-.footer-logo p{
+.footer-logo address{
     white-space: pre-line;
+    font-style: normal;
 }
 
 .footer-container ul{
@@ -484,4 +496,274 @@ form{
     cursor: pointer;
 }
 
+/*media queries para moviles 640px*/
 
+@media (min-width: 640px) and (max-width: 1199px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .button, .button-right {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .hero-images {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .hero-images img.team-member {
+    max-width: 400px;
+  }
+
+  .hero-images img.left, .hero-images img.right {
+    width: 240px;
+  }
+
+  .hero-images img.left {
+    top: -20px;
+    left: -50px;
+  }
+
+  .hero-images img.right {
+    bottom: -20px;
+    right: -60px;
+  }
+
+   .logos {
+    padding: 20px 0;
+  }
+
+  .logos div {
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .logos img {
+    height: 30px;  
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; 
+    padding: 10px 30px;
+    gap: 10px;
+  }
+
+  .projects-grid h2 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .projects-card {
+    max-width: 100%;
+    padding: 5px 0;
+  }
+
+   .projects-card img {
+    height: 350px;
+  }
+
+  .projects-card h3 {
+    font-size: 2rem;
+  }
+
+  .projects-card p {
+    font-size: 0.9rem;
+  }
+
+  /*Section Clients*/
+
+
+  .clients {
+    padding: 4rem 2rem; 
+    margin: 1rem;      
+  }
+
+  .clients h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .clients h3 {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .profile img {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile h2 {
+    font-size: 0.8rem;
+    text-align: center; 
+    margin-bottom: 5px;
+  }
+
+
+  .profile p {
+    font-size: 0.6rem;
+    text-align: center; 
+  }
+
+  .emoji {
+    width: 100px;
+  }
+
+  .top-left {
+    top: -20px;
+    left: 5px;
+  }
+
+  .top-right {
+    top: -20px;
+    right: 5px;
+  }
+
+  .bottom-right {
+    bottom: 40px;
+    right: 5px;
+  }
+
+  .bottom-left {
+    bottom: 40px;
+    left: 5px;
+  }
+
+/**/
+
+  .services-grid {
+    grid-template-columns: 1fr; 
+    gap: 2rem;                  
+    padding: 2rem 1rem;         
+    max-width: 50%;           
+  }
+
+  .services-grid h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;   
+  }
+
+  .service-cards {
+    padding: 15px;
+  }
+
+  .service-cards h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .service-cards p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-cards img {
+    width: 40%; /
+  }
+
+  .learn-more {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+/**/
+
+.cta {
+    padding: 4rem 1rem;         
+    margin: 1rem 1rem 3rem;     
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    flex-direction: column;   
+    gap: 0.5rem;
+    
+  }
+
+  .input-group{
+    width: 100%;
+  }
+
+  .email {
+    width: 100%;     
+    padding: 0.8rem 2.5rem;   
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    width: 100%;     
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .email-icon {
+    left: 8px;
+    top: 11px;
+    width: 20px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-logo img {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-logo address {
+    font-size: 0.9rem;
+  }
+
+  .footer-container ul {
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem 2rem;
+  }
+}
