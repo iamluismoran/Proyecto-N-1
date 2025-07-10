@@ -368,3 +368,51 @@ form{
     top: 10px;
     width: 25px;
 }
+
+.footer-container{
+    color: #6b708d;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem 12rem;
+    flex-wrap: wrap;
+}
+
+.footer-logo img{
+    width: 90px;
+    margin-bottom: 1rem;
+}
+
+.footer-logo p{
+    white-space: pre-line;
+}
+
+.footer-container ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 3rem 6rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container ul li a{
+    text-decoration: none;
+    color: #6b708d;
+    transition: 1s ease;
+}
+
+.footer-container ul li a:hover{
+    color: #0623a1;
+}
+
+.footer-container ul li{
+    transition: 1s ease;
+}
+
+.footer-container ul li:hover{
+    color: #0623a1;
+    cursor: pointer;
+}
+
+
