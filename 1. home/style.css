@@ -286,7 +286,14 @@ body{
 .emoji{
     position: absolute;
     width: 150px;
+    transition: 1s ease;
 }
+
+.emoji:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 .top-left {
     top: 10px;
