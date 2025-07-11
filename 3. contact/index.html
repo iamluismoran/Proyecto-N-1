@@ -34,15 +34,18 @@
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{9,15}" title="Please enter a valid phone number" />
                 </div>
             </div>
             <div class="form-group">
                 <label for="message">Message *</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message here ...." required></textarea>
+                <textarea id="message" name="message" minlength="10" rows="5" placeholder="Write your message here" required></textarea>
             </div>
             <button type="submit" class="submit-button">Submit</button>
         </form>
+        <div id="successMessage" class="success-message hidden">
+            Message sent successfully! Thank you <span id="userName"></span>
+        </div>
 
     </main>
     
@@ -55,12 +58,13 @@
 
         <ul>
             <li>Team</li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="../1. home/index.html#services">Services</a></li>
             <li>About Us</li>
             <li>Press</li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="../1. home/index.html#projects">Projects</a></li>
             <li>Privacy Policy</li>
         </ul>
     </footer>
+    <script src="../3. contact/script.js"></script>
 </body>
 </html>
