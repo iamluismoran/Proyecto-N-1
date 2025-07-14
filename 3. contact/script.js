@@ -8,6 +8,17 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     const successMessage = document.getElementById("successMessage");
     const userName = document.getElementById("userName");
 
+    if (name.toLowerCase() === "ironhack") {
+    errorMessage.textContent = "You cannot be Ironhack, because I am Ironhack.";
+    errorMessage.classList.add("show");
+
+    setTimeout(() => {
+      errorMessage.classList.remove("show");
+    }, 5000);
+
+    return;
+  }
+
     if (!name || !email || !message) {
         alert("Please fill in all required fields.")
         return

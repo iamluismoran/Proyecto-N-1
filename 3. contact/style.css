@@ -167,6 +167,35 @@ button:hover{
   opacity: 1;
 }
 
+.error-message {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff4b4b;
+  color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: none;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.error-message.show {
+  display: block;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+
 .footer-container{
     color: #6b708d;
     display: flex;
