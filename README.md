@@ -26,7 +26,7 @@ Este proyecto es una página web responsive construida como parte del módulo de
 - Clona el repositorio: git clone https://github.com/iamluismoran/Proyecto-N-1.git
 
 ## Deploy
-- 
+- https://dulcet-pasca-734d21.netlify.app/
 
 ## Autor
 Luis Elías Morán Piña
