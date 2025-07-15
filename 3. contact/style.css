@@ -245,3 +245,29 @@ button:hover{
 
 /*media queries para moviles 640px*/
 
+@media (min-width: 640px) and (max-width: 1199px) {
+    
+  /*Footer*/
+
+
+  .footer-container {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-logo img {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-logo address {
+    font-size: 0.9rem;
+  }
+
+  .footer-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem 2rem;
+  }
+}
